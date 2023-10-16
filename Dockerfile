@@ -1,7 +1,7 @@
 FROM tomcat:9.0.80-jdk11-corretto-al2
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 RUN rm -rf /usr/local/tomcat/webapps/examples
-ADD ch05_ex2_email.war /usr/local/tomcat/webapps/
+ADD W4_21110289-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
